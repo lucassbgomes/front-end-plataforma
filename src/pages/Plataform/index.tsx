@@ -253,7 +253,7 @@ function Plataform() {
                         onChange={(value) =>
                           onChange(value)
                         }
-                        renderInput={(params) => <TextField error={!!error} id="dataFinal" variant="standard" fullWidth helperText="Info" FormHelperTextProps={{sx: {textAlign: 'right'}}} {...params} />}
+                        renderInput={(params) => <TextField error={!!error} id="dataFinal" variant="standard" fullWidth helperText={errors.dataFinal ? '' : 'Info'} FormHelperTextProps={{sx: {textAlign: 'right'}}} {...params} />}
                       />
                     )}
                   />
